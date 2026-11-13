@@ -1,7 +1,8 @@
 
 
 # machine learning
-hello, my name is harmin and this is my machine_learning repository, and I am share my machine learning learning here!
+This is a machine learning repository, In which I am write the ML model from scratch (mathematically), to understand real working on them.
+the repo also include the pratice of Python library used in ML, and also contains docs and refrences.
 
 ### models
 - Linear regression
