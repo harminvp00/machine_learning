@@ -1,12 +1,10 @@
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # reading csv file,
 df = pd.read_csv('houses.csv')
-print(df.info())
+# print(df.info())
 
 # converting string data to the numerical classes 0/1, Binary Encoding
 df['mainroad'] = df['mainroad'].replace({"yes":1, "no":0})
@@ -24,7 +22,6 @@ df = df.rename(columns={
     "furnishingstatus_unfurnished": "unfurnished" 
     })
 
-print(df.describe())
-
-plt.bar(['yes', 'no'], [1, 0])
+plt.plot(df['area'])
+plt.ylabel("area")
 plt.show()
